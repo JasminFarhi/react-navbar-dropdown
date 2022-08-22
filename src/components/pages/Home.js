@@ -1,10 +1,15 @@
-import React from 'react';
-import '../../App.css';
+import React from "react";
+import "../../App.css";
+import { robFarhi } from "../../images/augMeetUp.png";
 
-export default function Home() {
+const Home = () => {
+  console.log(robFarhi);
   return (
     <>
-      <h1 className='home'>EPIC</h1>
+      <div>
+        <img src={require(robFarhi)} alt="rob" />
+      </div>
     </>
   );
-}
+};
+export default Home;
